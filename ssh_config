@@ -1,0 +1,14 @@
+Host *                                                                         
+  TCPKeepAlive yes                                                             
+  ServerAliveInterval 60                                                       
+  ControlMaster auto                                                           
+  ControlPath ~/.ssh/connections/%r_%h_%p 
+
+Host 10.241.119.3
+IdentityFile ~/.ssh/jim_lin@lcu-git-server
+User git
+Port 22
+Host 10.241.117.32
+IdentityFile ~/.ssh/jim_lin@lcu-git-server
+User git
+Port 22
